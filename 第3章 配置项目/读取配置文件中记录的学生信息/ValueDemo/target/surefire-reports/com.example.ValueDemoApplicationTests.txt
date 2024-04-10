@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.ValueDemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.014 s <<< FAILURE! - in com.example.ValueDemoApplicationTests
+contextLoads  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'valueController': Unsatisfied dependency expressed through field 'age'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "$(com.example.age)"
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "$(com.example.age)"
+Caused by: java.lang.NumberFormatException: For input string: "$(com.example.age)"
+
